@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Krevynix jailbreak repository. System controls, communications utilities and contact-photo tools.">
+  <meta name="color-scheme" content="dark light"><title>Krevynix's Repository</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <a class="brand" href="./" aria-label="Krevynix home"><img src="assets/mark.svg" alt="Krevynix" width="72" height="72"></a>
+      <p class="eyebrow">Jailbreak repository</p>
+      <h1>Krevynix's Repo</h1>
+      <p class="intro">One source for Krevynix tweaks.<br>Packages and updates, together.</p>
+    </header>
+    <section class="source" aria-label="Repository source">
+      <button id="copy-source" disabled><span id="source-url">GitHub source not configured</span><span class="copy-icon" aria-hidden="true">▢</span></button>
+      <p id="copy-status" role="status">Local development preview</p>
+    </section>
+    <section class="managers" aria-labelledby="managers-title">
+      <h2 id="managers-title">Add it to your package manager</h2>
+      <p>Choose your package manager to add the published source.</p>
+      <div class="manager-grid">
+        <a id="sileo" aria-disabled="true"><span class="manager-icon sileo" aria-hidden="true">S</span><span>Sileo</span></a>
+        <a id="zebra" aria-disabled="true"><span class="manager-icon zebra" aria-hidden="true">Z</span><span>Zebra</span></a>
+        <a id="installer" aria-disabled="true"><span class="manager-icon installer" aria-hidden="true">↓</span><span>Installer</span></a>
+        <a id="cydia" aria-disabled="true"><span class="manager-icon cydia" aria-hidden="true">C</span><span>Cydia</span></a>
+      </div>
+      <p class="availability" id="availability">Manager links become available after publication.</p>
+    </section>
+    <section class="packages" aria-labelledby="packages-title">
+      <h2 id="packages-title">In this repository</h2>
+      <p id="package-count">Loading package inventory…</p>
+      <div id="package-list" class="package-list"></div>
+      <p class="release-note">Development builds. Check each package's compatibility before installing.</p>
+    </section>
+    <section class="desktop" aria-labelledby="desktop-title">
+      <img id="qr" hidden width="120" height="120" alt="QR code for this repository">
+      <h2 id="desktop-title">On a computer?</h2>
+      <p id="desktop-copy">Open the published source on your iPhone or iPad. Package-manager links work on the device you're installing to.</p>
+    </section>
+    <footer><a href="features.html">Features &amp; compatibility</a><span>/</span><a href="credits.html">Credits &amp; source</a><p>Krevynix</p></footer>
+  </main>
+</body>
+</html>
